@@ -1,0 +1,361 @@
+/* 字体声明开始*/
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+	font-family:'youyuan';
+	font-style:normal;
+	font-weight:100;
+	src:local('youyuan'), url("../font/youyuan.TTF") format("woff");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-sousuo:before { content: "\f00d7"; }
+.icon-wode:before { content: "\e6bc"; }
+.icon-icon01:before { content: "\e612"; }
+.icon-98redian:before { content: "\e7b4"; }
+.icon-wanle:before { content: "\e6c1"; }
+.icon-unie60b:before { content: "\e602"; }
+/* 字体声明结束 */
+/* 标签处理开始 */
+body,p,h1,h2,h3,h4,h5,h6,ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:1.2rem;
+	font-family:'youyuan';
+}
+a{
+	text-decoration: none;
+}
+/* 标签处理结束 */
+/* 订阅页面开始 */
+/* 轮播图开始 */
+.slider{
+	position:absolute;
+	top:51px;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:200px;
+	display:none;
+}
+.slider .slides{
+	height:100%;
+}
+.slider .slides li{
+	opacity:1;
+	left:100%;
+	transition:left .325s ease;
+}
+.slider,.slider .slides{
+	overflow:hidden;
+}
+.slider .slides .active{
+	left:0;
+}
+.slider .slides .zuoce{
+	left:-100%;
+}
+.slider .slides li .caption{
+	opacity:1;
+}
+/* .slider .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index:2;
+}
+.slider .indicators .indicator-item{
+	background-color:rgba(255,255,255,0.4);
+}
+.slider .indicators .indicator-item.active{
+	background-color:rgb(255,255,255);
+} */
+/* 轮播图结束 */
+/* 内容部分开始 */
+.contentding{
+	margin-top:200px;
+	display:none;
+}
+.contentding ul li{
+	width:33.3%;
+	height:120px;
+	border-right:1px solid #E8E8E8;
+	border-bottom:1px solid #E8E8E8;
+	float:left;
+	font-size:1rem;
+}
+.contentding img{
+	width:50px;
+	height:50px;
+}
+.contentding ul li div{
+	text-align:center;
+	font-weight: bold;
+	color:black;
+}
+.contentding ul li div:first-child{
+	margin-top:20px;
+}
+/* 轮播图结束 */
+/* 订阅页面结束 */
+
+/* 热点页面开始 */
+.refirst{
+	padding:8px 20px;
+	background:#ffffff;
+	border-bottom:10px solid #f0f0f0;
+	display:none;
+	overflow:hidden;
+}
+.refirstzuo{
+	width:65%;
+	float:left;
+	margin-top:5px;
+}
+.refirstzuo p{
+	color:#262626;
+}
+.refirstzuo span{
+	color:#dfdfdf;
+	font-size:0.8rem;
+}
+.refirstyou{
+	width:30%;
+	height:80px;
+	float:right;
+}
+.refirstyou img{
+	width:100%;
+	height:100%;
+}
+/* 热点页面结束 */
+
+/* 玩乐页面开始 */
+.play{
+	width:100%;
+	height:120px;
+	color:white;
+	display:none;
+	text-align:center;
+	position:relative;
+	margin-bottom:15px;
+}
+.play img{
+	width:100%;
+	height:120px;
+}
+.play div{
+	width:245px;
+	height:45px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-122px;
+	margin-top:-22px;
+}
+.play span{
+	font-size:0.8rem;
+}
+/* 玩乐页面结束 */
+
+/* 社区页面开始 */
+.shenav{
+	display:none;
+	border:2px solid #F7F7F8;
+	overflow:hidden;
+	position:relative;
+}
+.shenav .sheli{
+	width:33.3%;
+	padding:10px 0px;
+	color:#B0AFAF;
+	float:left;
+	text-align:center;
+}
+.shenav .sheli:first-child{
+	color:#FA4646;
+}
+.shenav .block{
+	width:33.3%;
+	height:3px;
+	background:#FA4646;
+	position:absolute;
+	left:0;
+	bottom:0;
+	transition:left .2s ease;
+}
+.shebody{
+	width:100%;
+	position:relative;
+	display:none;
+}
+.shebody li{
+	width:100%;
+	position:absolute;
+	left:100%;
+	top:0;
+	transition:left .6s ease-out;
+}
+/* 关注页面开始 */
+.shebody .sheguan div{
+	text-align:center;
+	margin-top:200px;
+}
+.shebody .sheguan div img{
+	width:50%;
+	height:50%;
+}
+/* 关注页面结束 */
+/* 精选页面开始 */
+.sheall{
+	display:none;
+	border-bottom:15px solid #f0f0f0;
+}
+.shehead{
+	padding:15px 20px;
+	overflow:hidden;
+}
+.sheimg{
+	width:20%;
+	height:70px;
+	float:left;
+}
+.sheimg img{
+	width:100%;
+	height:100%;
+}
+.shename{
+	width:75%;
+	float:right;
+}
+.shename>span{
+	color:#18b1ff;
+}
+.shename>p{
+	color:#c0c0c0;
+	font-size:1rem;
+}
+.shename>p span:first-child{
+	text-align:left;
+}
+.shename>p span:last-child{
+	text-align:right;
+}
+.shezi{
+	padding:5px 20px 15px;
+}
+.shetu{
+	width:100%;
+	height:150px;
+}
+.shetu img{
+	width:100%;
+	height:100%;
+}
+/* 精选页面结束 */
+/* 发现页面开始 */
+.fa{
+	display:none;
+	padding:15px 15px;
+	overflow:hidden;
+}
+.fatu{
+	float:left;
+	margin-right:10px;
+}
+.fatu img{
+	width:60px;
+	height:60px;
+}
+.fazi{
+	float:left;
+}
+.fazi span{
+	color:black;
+	font-size:1.3rem;
+}
+.fazi p{
+	color:#ababab;
+	font-size:1rem;
+}
+.fatubiao{
+	float:right;
+}
+.fatubiao img{
+	width:30px;
+	height:30px;
+}
+/* 发现页面结束 */
+/* 社区页面结束 */
+/* 头部开始 */
+.header{
+	padding:10px 15px;
+	background:#fb4747;
+	overflow:hidden;
+}
+.zuo{
+	float:left;
+	color:white;
+	font-weight:bold;
+}
+.you{
+	float:right;
+}
+.you a:first-child{
+	margin-right:20px;
+}
+.you i{
+	font-size:1.5rem;
+	color:white;
+}
+/* 头部结束 */
+/* 身体开始 */
+.body{
+	padding:0 0 57px;
+}
+/* 身体结束 */
+/* 脚部开始 */
+.footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	padding:0 20px;
+	background:yellowgreen;
+	font-size:1rem;
+	background:#f6f6f6;
+	color:#6c6c6c;
+	border-top:1px solid #E8E8E8;
+}
+.footer div{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.footer i{
+	font-size:1.7rem;
+}
+.active2{
+	color:#fb4747;
+}
+.footer div span{
+	margin-left:-7px;
+}
+/* 脚部结束 */
